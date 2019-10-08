@@ -1,14 +1,24 @@
 import React from 'react';
 import './App.css';
-import Encabezado from './components/Encabezado';
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Home from './pages/Home';
+import Contacto from './pages/Contacto';
+import Patrocinadores from './pages/Patrocinadores';
+import Contribuciones from './pages/Contribuciones'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Encabezado tema={"Tecnología"} />
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/contacto" component={Contacto} />
+          <Route path="/topics" component={Patrocinadores} />
+          <Route path="/contribition" component={Contribuciones} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
