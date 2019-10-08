@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Encabezado tema={"Tecnología"} />
+        <Encabezado tema={"Tecnología"}  subtitulo={"React"}/>
 
         <img src={logo} className="App-logo" alt="logo" />
         <p>
