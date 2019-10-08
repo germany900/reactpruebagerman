@@ -2,12 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Encabezado from './components/Encabezado';
+import Subtitulo from './components/Subtitulo';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Encabezado tema={"Tecnología"} />
+        <Encabezado tema={'Ciencias'} />
+        <Subtitulo titulo={'Ciencias Sociales'} />
 
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,7 +21,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React Now!
         </a>
       </header>
     </div>
